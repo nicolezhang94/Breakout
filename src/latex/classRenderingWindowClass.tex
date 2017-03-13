@@ -1,0 +1,127 @@
+\hypertarget{classRenderingWindowClass}{\section{Rendering\-Window\-Class Class Reference}
+\label{classRenderingWindowClass}\index{Rendering\-Window\-Class@{Rendering\-Window\-Class}}
+}
+
+
+Collaboration diagram for Rendering\-Window\-Class\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classRenderingWindowClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRenderingWindowClass_ad48948a08088e973aac8a57c96dee52c}{\hyperlink{classRenderingWindowClass_ad48948a08088e973aac8a57c96dee52c}{Rendering\-Window\-Class} ()}\label{classRenderingWindowClass_ad48948a08088e973aac8a57c96dee52c}
+
+\begin{DoxyCompactList}\small\item\em Default constructor for \hyperlink{classRenderingWindowClass}{Rendering\-Window\-Class}. \end{DoxyCompactList}\item 
+\hypertarget{classRenderingWindowClass_a10c28c3d432aa2e7864284301496fa85}{\hyperlink{classRenderingWindowClass_a10c28c3d432aa2e7864284301496fa85}{$\sim$\-Rendering\-Window\-Class} ()}\label{classRenderingWindowClass_a10c28c3d432aa2e7864284301496fa85}
+
+\begin{DoxyCompactList}\small\item\em Default destructor for \hyperlink{classRenderingWindowClass}{Rendering\-Window\-Class}. \end{DoxyCompactList}\item 
+double $\ast$ \hyperlink{classRenderingWindowClass_a9f6608b40171774123597e59f2a24c9c}{set\-Graphics\-Color} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Determines how to render the color a \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} object. \end{DoxyCompactList}\item 
+void \hyperlink{classRenderingWindowClass_a633f976d7c799676075d3f8025c00006}{draw\-Object} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Determines how to draw a \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} object. \end{DoxyCompactList}\item 
+void \hyperlink{classRenderingWindowClass_af5d9c9b8ffed253fed1a60d7720c871a}{draw\-Circle} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Draws a circular object. \end{DoxyCompactList}\item 
+void \hyperlink{classRenderingWindowClass_a2fa407ff2e2467edcda4f18df7531db3}{draw\-Rectangle} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Draws a rectangular object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRenderingWindowClass_af5d9c9b8ffed253fed1a60d7720c871a}{\index{Rendering\-Window\-Class@{Rendering\-Window\-Class}!draw\-Circle@{draw\-Circle}}
+\index{draw\-Circle@{draw\-Circle}!RenderingWindowClass@{Rendering\-Window\-Class}}
+\subsubsection[{draw\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void Rendering\-Window\-Class\-::draw\-Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{classRenderingWindowClass_af5d9c9b8ffed253fed1a60d7720c871a}
+
+
+Draws a circular object. 
+
+This function takes in a \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} object and draws it as a circle of radius \char`\"{}size\char`\"{} using 50 triangle fans using G\-L\-\_\-\-T\-R\-I\-A\-N\-G\-L\-E\-\_\-\-F\-A\-N. The size, color, and location are determined by the object's own attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & an object within the simulation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classRenderingWindowClass_a633f976d7c799676075d3f8025c00006}{\index{Rendering\-Window\-Class@{Rendering\-Window\-Class}!draw\-Object@{draw\-Object}}
+\index{draw\-Object@{draw\-Object}!RenderingWindowClass@{Rendering\-Window\-Class}}
+\subsubsection[{draw\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void Rendering\-Window\-Class\-::draw\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{classRenderingWindowClass_a633f976d7c799676075d3f8025c00006}
+
+
+Determines how to draw a \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} object. 
+
+This function takes in a \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} object as an argument and decides based on the object's Object\-Type attribute (ball\-Type, paddle\-Type, or brick\-Type) whether to draw the object as a circle or rectangle. If an invalid Object\-Type is detected, no object is drawn.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} object within the simulation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classRenderingWindowClass_a2fa407ff2e2467edcda4f18df7531db3}{\index{Rendering\-Window\-Class@{Rendering\-Window\-Class}!draw\-Rectangle@{draw\-Rectangle}}
+\index{draw\-Rectangle@{draw\-Rectangle}!RenderingWindowClass@{Rendering\-Window\-Class}}
+\subsubsection[{draw\-Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}void Rendering\-Window\-Class\-::draw\-Rectangle (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{classRenderingWindowClass_a2fa407ff2e2467edcda4f18df7531db3}
+
+
+Draws a rectangular object. 
+
+This function takes in a \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} object and draws it as a G\-L\-\_\-\-Q\-U\-A\-D\-S. Its width, height, color, and location are all dependent on the input object's own attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & an object within the simulation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classRenderingWindowClass_a9f6608b40171774123597e59f2a24c9c}{\index{Rendering\-Window\-Class@{Rendering\-Window\-Class}!set\-Graphics\-Color@{set\-Graphics\-Color}}
+\index{set\-Graphics\-Color@{set\-Graphics\-Color}!RenderingWindowClass@{Rendering\-Window\-Class}}
+\subsubsection[{set\-Graphics\-Color}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Rendering\-Window\-Class\-::set\-Graphics\-Color (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{classRenderingWindowClass_a9f6608b40171774123597e59f2a24c9c}
+
+
+Determines how to render the color a \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} object. 
+
+This function takes in a \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} object as an argument and decides based on the object's color attribute which parameters to pass to G\-L\-U\-T's gl\-Color3f function, which is called in the draw\-Circle and draw\-Rectangle method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} object within the simulation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array with R\-G\-B values
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+
+Rachel Soble 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RenderingWindowClass_8h}{Rendering\-Window\-Class.\-h}\item 
+\hyperlink{RenderingWindowClass_8cpp}{Rendering\-Window\-Class.\-cpp}\end{DoxyCompactItemize}

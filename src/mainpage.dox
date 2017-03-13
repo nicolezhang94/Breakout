@@ -1,0 +1,20 @@
+/*! \mainpage Breakout Documentation File
+ *  
+ *  <h2>Author</h2>
+ *  <div>Nicole Zhang</div>
+ *
+ *  <h2>Documentation and Game Overview</h2>
+ *  <p>Here you will find documentation on the game Breakout, created for the individual project assignment for CSCI 3081W.
+ *     The objective of the game is to break all the bricks in the game, displayed as a beautiful rainbow at the top half of the
+ *     screen. A ball bounces back and forth around the environment and destroys any bricks it comes in contact with, and the
+ *     player controls a paddle at the bottom of the screen to bounce the ball back up towards the bricks. Instructions on how to
+ *     control the paddle and pause the game are displayed in the "Controls" window when the game is run. If the
+ *     ball passes below the paddle and hits the bottom of the screen, the player loses a life. Popularized by the Activision's
+ *     2014 hit "Call of Duty: Advanced Warfare", the option to press "F" to pay respects is available when the player loses a life.
+ *     The player gets three total lives to complete the objective and break all the bricks. If the player loses all three lives
+ *     before breaking all the bricks, it's game over.
+ *  </p>
+ *  
+ *  <p><img src = "http://upload.wikimedia.org/wikipedia/en/7/7a/BreakOut_arcadeflyer.png" width = 35% height = 35% align = "left"></p>
+ *  <p></p>
+ */

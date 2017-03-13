@@ -1,0 +1,137 @@
+\hypertarget{classSimulation}{\section{Simulation Class Reference}
+\label{classSimulation}\index{Simulation@{Simulation}}
+}
+
+
+{\ttfamily \#include $<$Simulation.\-h$>$}
+
+
+
+Inheritance diagram for Simulation\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSimulation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simulation\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSimulation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries U\-I\-Control\-Type} \{ {\bfseries U\-I\-\_\-\-Q\-U\-I\-T} = 0
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSimulation_a4c669ceaa34c7130966ce45f9de75fbe}{Simulation} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, int width, int height)
+\begin{DoxyCompactList}\small\item\em Initializes Open\-G\-L window. \end{DoxyCompactList}\item 
+\hypertarget{classSimulation_a80fad3f57dfaf195a36f7bc49bc88279}{virtual \hyperlink{classSimulation_a80fad3f57dfaf195a36f7bc49bc88279}{$\sim$\-Simulation} ()}\label{classSimulation_a80fad3f57dfaf195a36f7bc49bc88279}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classSimulation_a449dcb7d97dfba99efe770de2f399c31}{display} ()
+\begin{DoxyCompactList}\small\item\em Displays the simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classSimulation_acf598e815ded8ca12cad5db975ac8849}{start} ()
+\begin{DoxyCompactList}\small\item\em Starts simulation. \end{DoxyCompactList}\item 
+static void \hyperlink{classSimulation_a685b3dae9c7d04df7783e2f029e3dec0}{adjust\-Speed} ()
+\begin{DoxyCompactList}\small\item\em Lets user increase speed of all robots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classSimulation}{Simulation} class. This sets up the G\-U\-I and the drawing environment. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSimulation_a4c669ceaa34c7130966ce45f9de75fbe}{\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\subsubsection[{Simulation}]{\setlength{\rightskip}{0pt plus 5cm}Simulation\-::\-Simulation (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{classSimulation_a4c669ceaa34c7130966ce45f9de75fbe}
+
+
+Initializes Open\-G\-L window. 
+
+Creates Open\-G\-L window and U\-I panel with Start and Quit buttons, instructions, and a speed adjuster.
+
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSimulation_a685b3dae9c7d04df7783e2f029e3dec0}{\index{Simulation@{Simulation}!adjust\-Speed@{adjust\-Speed}}
+\index{adjust\-Speed@{adjust\-Speed}!Simulation@{Simulation}}
+\subsubsection[{adjust\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Simulation\-::adjust\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classSimulation_a685b3dae9c7d04df7783e2f029e3dec0}
+
+
+Lets user increase speed of all robots. 
+
+This function increases the speed of all robots by increasing a global flag. Once changed, this flag is added into the calculations performed in translate robot
+
+\begin{DoxyAuthor}{Author}
+Nicholas Inman 
+\end{DoxyAuthor}
+\hypertarget{classSimulation_a449dcb7d97dfba99efe770de2f399c31}{\index{Simulation@{Simulation}!display@{display}}
+\index{display@{display}!Simulation@{Simulation}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Simulation\-::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimulation_a449dcb7d97dfba99efe770de2f399c31}
+
+
+Displays the simulation. 
+
+This function first determines which G\-L\-U\-I windows need to be displayed based on varying flags. Then, it calculates the passed time in the simulation and displays the environment and objects accordingly by calling the \hyperlink{classEnvironmentClass}{Environment\-Class} display function.
+
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+
+
+Reimplemented from \hyperlink{classBaseGfxApp}{Base\-Gfx\-App}.
+
+\hypertarget{classSimulation_acf598e815ded8ca12cad5db975ac8849}{\index{Simulation@{Simulation}!start@{start}}
+\index{start@{start}!Simulation@{Simulation}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Simulation\-::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classSimulation_acf598e815ded8ca12cad5db975ac8849}
+
+
+Starts simulation. 
+
+Starts simulation by toggling flag. This allows the environment to run the update function and move the objects.
+
+\begin{DoxyAuthor}{Author}
+Nicholas Inman 
+
+Nicole Zhang 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Simulation_8h}{Simulation.\-h}\item 
+\hyperlink{Simulation_8cpp}{Simulation.\-cpp}\end{DoxyCompactItemize}

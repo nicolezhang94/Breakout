@@ -1,0 +1,423 @@
+\hypertarget{classRobotClass}{\section{Robot\-Class Class Reference}
+\label{classRobotClass}\index{Robot\-Class@{Robot\-Class}}
+}
+
+
+Inheritance diagram for Robot\-Class\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classRobotClass__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Robot\-Class\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classRobotClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRobotClass_a7125604039c2a4b39e34e4354bd4ce19}{Robot\-Class} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \hyperlink{classRobotClass}{Robot\-Class}. \end{DoxyCompactList}\item 
+\hyperlink{classRobotClass_a56480a1dfd55d883563042eea3762212}{Robot\-Class} (char reaction\-Type\-In, char connection\-Type\-In)
+\begin{DoxyCompactList}\small\item\em Constructor with two arguments, reaction\-Type\-In and connection\-Type\-In. \end{DoxyCompactList}\item 
+\hyperlink{classRobotClass_a987480b493b3b7a0ce7f322d8eb02597}{Robot\-Class} (double strength\-In)
+\begin{DoxyCompactList}\small\item\em Constructor that takes in strength. \end{DoxyCompactList}\item 
+\hypertarget{classRobotClass_a7d7725737f146f85ed7ceeae7f300e9e}{\hyperlink{classRobotClass_a7d7725737f146f85ed7ceeae7f300e9e}{$\sim$\-Robot\-Class} ()}\label{classRobotClass_a7d7725737f146f85ed7ceeae7f300e9e}
+
+\begin{DoxyCompactList}\small\item\em default deconstructor for \hyperlink{classRobotClass}{Robot\-Class} \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classRobotClass_accb083a3e0371d3a30f228d4acc49fad}{rand\-Sensor\-Settings} ()
+\begin{DoxyCompactList}\small\item\em Calculates random robot sensor settings. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a56b10738037c31923df7f8d9fbc3e55d}{set\-Strength} (double strength\-In)
+\begin{DoxyCompactList}\small\item\em Sets robot sensor strength. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_afe213f4eb19cb904f5a4c10ebb9b7db8}{set\-Scaled\-Color} ()
+\begin{DoxyCompactList}\small\item\em Sets color based on sensor strength. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a6e4902a26041b33ed83932a4514bb8c0}{set\-Init\-Location} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Sets the initial robot location. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a264d12c67f65e3eef63a0e90a3b902b1}{set\-Location} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Sets the robot location. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_ac97314ad632887074ca7c8e92e4e602e}{set\-Left\-Speed} (double left\-Speed\-In)
+\begin{DoxyCompactList}\small\item\em Sets the speed of the left wheel. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a6583cda55bd2f4d85ca7e55377730e1c}{set\-Right\-Speed} (double right\-Speed\-In)
+\begin{DoxyCompactList}\small\item\em Sets the speed of the right wheel. \end{DoxyCompactList}\item 
+char \hyperlink{classRobotClass_a5264f716f6c216607f542cc7a2e08930}{get\-Reaction\-Type} ()
+\begin{DoxyCompactList}\small\item\em Returns the robot's reaction\-Type. \end{DoxyCompactList}\item 
+char \hyperlink{classRobotClass_acbf804af7a4ea02417df0aeddae5704c}{get\-Connection\-Type} ()
+\begin{DoxyCompactList}\small\item\em Returns the robot's connection\-Type. \end{DoxyCompactList}\item 
+double \hyperlink{classRobotClass_aa37142a222c6b2fc1f877d395f0b371d}{get\-Left\-Speed} ()
+\begin{DoxyCompactList}\small\item\em Returns the robot left wheel speed. \end{DoxyCompactList}\item 
+double \hyperlink{classRobotClass_ab414f4d538c9ba99c32c0297ac8ca189}{get\-Right\-Speed} ()
+\begin{DoxyCompactList}\small\item\em Returns the robot right wheel speed. \end{DoxyCompactList}\item 
+double $\ast$ \hyperlink{classRobotClass_a3a0e78ec4676acd3967102e56877dbd2}{get\-Left\-Sensor\-Location} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{[}x, y\mbox{]} location of the center of the left sensor. \end{DoxyCompactList}\item 
+double $\ast$ \hyperlink{classRobotClass_a285cf391b3d61dcc7428bd3fa09062e2}{get\-Right\-Sensor\-Location} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{[}x, y\mbox{]} location of the center of the right sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRobotClass_afa7665a25faeefd3008b7eeb6161c2f0}{char {\bfseries reaction\-Type}}\label{classRobotClass_afa7665a25faeefd3008b7eeb6161c2f0}
+
+\item 
+\hypertarget{classRobotClass_a541350327fe67b0cb80b5baab6967a3e}{char {\bfseries connection\-Type}}\label{classRobotClass_a541350327fe67b0cb80b5baab6967a3e}
+
+\item 
+\hypertarget{classRobotClass_ae0d707546559b007948a75261b5ab861}{double {\bfseries left\-Speed}}\label{classRobotClass_ae0d707546559b007948a75261b5ab861}
+
+\item 
+\hypertarget{classRobotClass_a105f2b608852cc323322d14275336e39}{double {\bfseries right\-Speed}}\label{classRobotClass_a105f2b608852cc323322d14275336e39}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRobotClass_a7125604039c2a4b39e34e4354bd4ce19}{\index{Robot\-Class@{Robot\-Class}!Robot\-Class@{Robot\-Class}}
+\index{Robot\-Class@{Robot\-Class}!RobotClass@{Robot\-Class}}
+\subsubsection[{Robot\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-Class\-::\-Robot\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a7125604039c2a4b39e34e4354bd4ce19}
+
+
+Default constructor for \hyperlink{classRobotClass}{Robot\-Class}. 
+
+This constructor takes in no arguments and sets the circle to a random location with size 50 and speed 10
+
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a56480a1dfd55d883563042eea3762212}{\index{Robot\-Class@{Robot\-Class}!Robot\-Class@{Robot\-Class}}
+\index{Robot\-Class@{Robot\-Class}!RobotClass@{Robot\-Class}}
+\subsubsection[{Robot\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-Class\-::\-Robot\-Class (
+\begin{DoxyParamCaption}
+\item[{char}]{reaction\-Type\-In, }
+\item[{char}]{connection\-Type\-In}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a56480a1dfd55d883563042eea3762212}
+
+
+Constructor with two arguments, reaction\-Type\-In and connection\-Type\-In. 
+
+This constructor takes in two character arguments. The first, reaction\-Type\-In, sets the robot reaction\-Type as either 'E' (excitatory) or 'I' (inhibitory). The second, connection\-Type\-In, sets the robot connection\-Type as either 'D' (direct) or 'C' (crossed). The other arguments, x and y, determine its location
+
+
+\begin{DoxyParams}{Parameters}
+{\em reaction\-Type\-In} & character reaction\-Type \\
+\hline
+{\em connection\-Type\-In} & character connection\-Type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a987480b493b3b7a0ce7f322d8eb02597}{\index{Robot\-Class@{Robot\-Class}!Robot\-Class@{Robot\-Class}}
+\index{Robot\-Class@{Robot\-Class}!RobotClass@{Robot\-Class}}
+\subsubsection[{Robot\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-Class\-::\-Robot\-Class (
+\begin{DoxyParamCaption}
+\item[{double}]{strength\-In}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a987480b493b3b7a0ce7f322d8eb02597}
+
+
+Constructor that takes in strength. 
+
+This constructor takes in the sensor strength
+
+
+\begin{DoxyParams}{Parameters}
+{\em strength\-In} & strength\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRobotClass_acbf804af7a4ea02417df0aeddae5704c}{\index{Robot\-Class@{Robot\-Class}!get\-Connection\-Type@{get\-Connection\-Type}}
+\index{get\-Connection\-Type@{get\-Connection\-Type}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Connection\-Type}]{\setlength{\rightskip}{0pt plus 5cm}char Robot\-Class\-::get\-Connection\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_acbf804af7a4ea02417df0aeddae5704c}
+
+
+Returns the robot's connection\-Type. 
+
+Returns the robot's connection\-Type\-: 'D' (direct) or 'C' (crossed). The former type of robot will have left wheel speed controlled by the left sensor and right wheel speed by the right sensor; the latter type will have left wheel speed controlled by the right sensor, and vice versa.
+
+\begin{DoxyReturn}{Returns}
+char connection\-Type
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a3a0e78ec4676acd3967102e56877dbd2}{\index{Robot\-Class@{Robot\-Class}!get\-Left\-Sensor\-Location@{get\-Left\-Sensor\-Location}}
+\index{get\-Left\-Sensor\-Location@{get\-Left\-Sensor\-Location}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Left\-Sensor\-Location}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Robot\-Class\-::get\-Left\-Sensor\-Location (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a3a0e78ec4676acd3967102e56877dbd2}
+
+
+Returns the \mbox{[}x, y\mbox{]} location of the center of the left sensor. 
+
+Returns the \mbox{[}x, y\mbox{]} location of the center of the left sensor
+
+\begin{DoxyReturn}{Returns}
+double\mbox{[}\mbox{]} left\-Sensor\-Location
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_aa37142a222c6b2fc1f877d395f0b371d}{\index{Robot\-Class@{Robot\-Class}!get\-Left\-Speed@{get\-Left\-Speed}}
+\index{get\-Left\-Speed@{get\-Left\-Speed}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Left\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}double Robot\-Class\-::get\-Left\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_aa37142a222c6b2fc1f877d395f0b371d}
+
+
+Returns the robot left wheel speed. 
+
+Returns the robot left wheel speed
+
+\begin{DoxyReturn}{Returns}
+double left\-Speed
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a5264f716f6c216607f542cc7a2e08930}{\index{Robot\-Class@{Robot\-Class}!get\-Reaction\-Type@{get\-Reaction\-Type}}
+\index{get\-Reaction\-Type@{get\-Reaction\-Type}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Reaction\-Type}]{\setlength{\rightskip}{0pt plus 5cm}char Robot\-Class\-::get\-Reaction\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a5264f716f6c216607f542cc7a2e08930}
+
+
+Returns the robot's reaction\-Type. 
+
+Returns the robot's reaction\-Type\-: 'E' (excitatory) or 'I' (inhibitory). The former type of robot will increase wheel speed when approaching a robot; the latter type will decrease wheel speed.
+
+\begin{DoxyReturn}{Returns}
+char reaction\-Type
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a285cf391b3d61dcc7428bd3fa09062e2}{\index{Robot\-Class@{Robot\-Class}!get\-Right\-Sensor\-Location@{get\-Right\-Sensor\-Location}}
+\index{get\-Right\-Sensor\-Location@{get\-Right\-Sensor\-Location}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Right\-Sensor\-Location}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Robot\-Class\-::get\-Right\-Sensor\-Location (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a285cf391b3d61dcc7428bd3fa09062e2}
+
+
+Returns the \mbox{[}x, y\mbox{]} location of the center of the right sensor. 
+
+Returns the \mbox{[}x, y\mbox{]} location of the center of the right sensor
+
+\begin{DoxyReturn}{Returns}
+double\mbox{[}\mbox{]} right\-Sensor\-Location
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_ab414f4d538c9ba99c32c0297ac8ca189}{\index{Robot\-Class@{Robot\-Class}!get\-Right\-Speed@{get\-Right\-Speed}}
+\index{get\-Right\-Speed@{get\-Right\-Speed}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Right\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}double Robot\-Class\-::get\-Right\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_ab414f4d538c9ba99c32c0297ac8ca189}
+
+
+Returns the robot right wheel speed. 
+
+Returns the robot right wheel speed
+
+\begin{DoxyReturn}{Returns}
+double right\-Speed
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_accb083a3e0371d3a30f228d4acc49fad}{\index{Robot\-Class@{Robot\-Class}!rand\-Sensor\-Settings@{rand\-Sensor\-Settings}}
+\index{rand\-Sensor\-Settings@{rand\-Sensor\-Settings}!RobotClass@{Robot\-Class}}
+\subsubsection[{rand\-Sensor\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Robot\-Class\-::rand\-Sensor\-Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_accb083a3e0371d3a30f228d4acc49fad}
+
+
+Calculates random robot sensor settings. 
+
+The default \hyperlink{classRobotClass}{Robot\-Class} constructor creates a robot with randomly assigned sensor settings (excitatory vs. inhibitory reaction\-Type, direct vs. connected connection\-Type).
+
+\begin{DoxyReturn}{Returns}
+char\mbox{[}\mbox{]} sensor\-Settings
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a6e4902a26041b33ed83932a4514bb8c0}{\index{Robot\-Class@{Robot\-Class}!set\-Init\-Location@{set\-Init\-Location}}
+\index{set\-Init\-Location@{set\-Init\-Location}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Init\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Init\-Location (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a6e4902a26041b33ed83932a4514bb8c0}
+
+
+Sets the initial robot location. 
+
+Sets the initial robot location, ensuring that the robot will not overlap with any other objects
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x double location of the robot \\
+\hline
+{\em y} & y double location of the robot\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_ac97314ad632887074ca7c8e92e4e602e}{\index{Robot\-Class@{Robot\-Class}!set\-Left\-Speed@{set\-Left\-Speed}}
+\index{set\-Left\-Speed@{set\-Left\-Speed}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Left\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Left\-Speed (
+\begin{DoxyParamCaption}
+\item[{double}]{left\-Speed\-In}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_ac97314ad632887074ca7c8e92e4e602e}
+
+
+Sets the speed of the left wheel. 
+
+Sets the speed of the left wheel
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\-Speed\-In} & left wheel speed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_a264d12c67f65e3eef63a0e90a3b902b1}{\index{Robot\-Class@{Robot\-Class}!set\-Location@{set\-Location}}
+\index{set\-Location@{set\-Location}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Location (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRobotClass_a264d12c67f65e3eef63a0e90a3b902b1}
+
+
+Sets the robot location. 
+
+Sets the robot location
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x double location of the robot \\
+\hline
+{\em y} & y double location of the robot\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+
+
+Reimplemented from \hyperlink{classPhysicalObjectClass_a3f9833aa04aa438de63b82fc761910ba}{Physical\-Object\-Class}.
+
+\hypertarget{classRobotClass_a6583cda55bd2f4d85ca7e55377730e1c}{\index{Robot\-Class@{Robot\-Class}!set\-Right\-Speed@{set\-Right\-Speed}}
+\index{set\-Right\-Speed@{set\-Right\-Speed}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Right\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Right\-Speed (
+\begin{DoxyParamCaption}
+\item[{double}]{right\-Speed\-In}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a6583cda55bd2f4d85ca7e55377730e1c}
+
+
+Sets the speed of the right wheel. 
+
+Sets the speed of the right wheel
+
+
+\begin{DoxyParams}{Parameters}
+{\em right\-Speed\-In} & right wheel speed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+\hypertarget{classRobotClass_afe213f4eb19cb904f5a4c10ebb9b7db8}{\index{Robot\-Class@{Robot\-Class}!set\-Scaled\-Color@{set\-Scaled\-Color}}
+\index{set\-Scaled\-Color@{set\-Scaled\-Color}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Scaled\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Scaled\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRobotClass_afe213f4eb19cb904f5a4c10ebb9b7db8}
+
+
+Sets color based on sensor strength. 
+
+Sets color based on sensor strength
+
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+
+
+Reimplemented from \hyperlink{classPhysicalObjectClass_a93cbd3f193dd774f7adadef50c4b0ff1}{Physical\-Object\-Class}.
+
+\hypertarget{classRobotClass_a56b10738037c31923df7f8d9fbc3e55d}{\index{Robot\-Class@{Robot\-Class}!set\-Strength@{set\-Strength}}
+\index{set\-Strength@{set\-Strength}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Strength}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Strength (
+\begin{DoxyParamCaption}
+\item[{double}]{strength\-In}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRobotClass_a56b10738037c31923df7f8d9fbc3e55d}
+
+
+Sets robot sensor strength. 
+
+Sets robot sensor strength
+
+
+\begin{DoxyParams}{Parameters}
+{\em strength\-In} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Rachel Soble 
+\end{DoxyAuthor}
+
+
+Reimplemented from \hyperlink{classPhysicalObjectClass_a0e803c1376fbb6a5b60aa3ebc5d7335d}{Physical\-Object\-Class}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RobotClass_8h}{Robot\-Class.\-h}\item 
+\hyperlink{RobotClass_8cpp}{Robot\-Class.\-cpp}\end{DoxyCompactItemize}

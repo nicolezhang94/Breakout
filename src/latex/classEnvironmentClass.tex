@@ -1,0 +1,299 @@
+\hypertarget{classEnvironmentClass}{\section{Environment\-Class Class Reference}
+\label{classEnvironmentClass}\index{Environment\-Class@{Environment\-Class}}
+}
+
+
+Collaboration diagram for Environment\-Class\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classEnvironmentClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEnvironmentClass_aa69ad01551a79f7326f005709061ff31}{\hyperlink{classEnvironmentClass_aa69ad01551a79f7326f005709061ff31}{Environment\-Class} ()}\label{classEnvironmentClass_aa69ad01551a79f7326f005709061ff31}
+
+\begin{DoxyCompactList}\small\item\em Default constructor for \hyperlink{classEnvironmentClass}{Environment\-Class}. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a7d992b6ef4e8b95542af1ae775be988a}{update} (double elapsed\-Time)
+\begin{DoxyCompactList}\small\item\em Updates the environment and all its objects. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a0c43d38e65c879efdad9f09a58835c77}{display} (double elapsed\-Time)
+\begin{DoxyCompactList}\small\item\em Draw and displays objects and environment. \end{DoxyCompactList}\item 
+int \hyperlink{classEnvironmentClass_a3acbe9866577efe3b66527babab09720}{touch\-Sensor\-Reading} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$ball)
+\begin{DoxyCompactList}\small\item\em Collision detection. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a0fa52a8dd735412f9d46f4e2499e8108}{translate} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object, double elapsed\-Time)
+\begin{DoxyCompactList}\small\item\em Moves the input object. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a6ce1e78294fb94ac1fc27cf3ef1f0419}{object\-Collision} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$current\-Object, \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$hit\-Object, double elapsed\-Time)
+\begin{DoxyCompactList}\small\item\em Performs wall collision movement. \end{DoxyCompactList}\item 
+\hyperlink{EnvironmentClass_8h_aa884075f403706dceea29a61771a0d44}{Collision\-Type} \hyperlink{classEnvironmentClass_a75226d04d26221aa24cef7a00bce6ce2}{collision\-Location} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$ball, \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$brick)
+\begin{DoxyCompactList}\small\item\em Determines which side of a brick has been hit. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a1ed98b3b6278f232cf12f660b8adbc42}{bounce\-Off\-Wall} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$ball)
+\begin{DoxyCompactList}\small\item\em Performs wall collision movement. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a897de11455490caa445294c40db3347d}{bounce\-Off\-Brick} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$ball, \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$brick)
+\begin{DoxyCompactList}\small\item\em Performs brick collision movement. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a36b4ce6ee76f327dc2b5155228ccf177}{bounce\-Off\-Paddle} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$ball, \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$paddle)
+\begin{DoxyCompactList}\small\item\em Performs paddle collision movement. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a564160db6ba48653b24b3a42ce9d2d58}{remove\-Object} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Removes the object from the simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEnvironmentClass_a3735bf3dc818a03984620368f196b1d0}{std\-::vector\\*
+$<$ \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$ $>$ {\bfseries physical\-Object\-Vector}}\label{classEnvironmentClass_a3735bf3dc818a03984620368f196b1d0}
+
+\item 
+\hypertarget{classEnvironmentClass_a403bb85973a4db56e0163686147dae8b}{\hyperlink{classRenderingWindowClass}{Rendering\-Window\-Class} $\ast$ {\bfseries render\-Env}}\label{classEnvironmentClass_a403bb85973a4db56e0163686147dae8b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEnvironmentClass_a897de11455490caa445294c40db3347d}{\index{Environment\-Class@{Environment\-Class}!bounce\-Off\-Brick@{bounce\-Off\-Brick}}
+\index{bounce\-Off\-Brick@{bounce\-Off\-Brick}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{bounce\-Off\-Brick}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::bounce\-Off\-Brick (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{ball, }
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{brick}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a897de11455490caa445294c40db3347d}
+
+
+Performs brick collision movement. 
+
+This function first determines which side of a brick the ball has collided with through the collision\-Location function. It then determines the new orientation the ball must have in order to have a natural looking bounce, which is based on its old orientation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ball} & the ball \\
+\hline
+{\em brick} & the brick being hit\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classEnvironmentClass_a36b4ce6ee76f327dc2b5155228ccf177}{\index{Environment\-Class@{Environment\-Class}!bounce\-Off\-Paddle@{bounce\-Off\-Paddle}}
+\index{bounce\-Off\-Paddle@{bounce\-Off\-Paddle}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{bounce\-Off\-Paddle}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::bounce\-Off\-Paddle (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{ball, }
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{paddle}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a36b4ce6ee76f327dc2b5155228ccf177}
+
+
+Performs paddle collision movement. 
+
+This function finds where on the paddle the ball has collided with and determines its new orientation based on this information. The further away from the paddle's centerpoint the ball has collided with, the sharper the angle the ball will bounce back towards.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ball} & the ball \\
+\hline
+{\em paddle} & the paddle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classEnvironmentClass_a1ed98b3b6278f232cf12f660b8adbc42}{\index{Environment\-Class@{Environment\-Class}!bounce\-Off\-Wall@{bounce\-Off\-Wall}}
+\index{bounce\-Off\-Wall@{bounce\-Off\-Wall}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{bounce\-Off\-Wall}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::bounce\-Off\-Wall (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{ball}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a1ed98b3b6278f232cf12f660b8adbc42}
+
+
+Performs wall collision movement. 
+
+This function performs collision movement when the ball has hit a wall. It first detects which wall it has hit and then bounces off in a natural manner, based on its old orientation. The ball is also translated inwards a bit in order to prevent clipping. If the ball has collided with the bottom wall, the ball does not bounce off but instead returns to the starting location and orientation. The paddle also returns to its starting location. In this case, a turn is lost and the game is paused, until the player presses \char`\"{}\-Start\char`\"{} again.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ball} & the ball\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classEnvironmentClass_a75226d04d26221aa24cef7a00bce6ce2}{\index{Environment\-Class@{Environment\-Class}!collision\-Location@{collision\-Location}}
+\index{collision\-Location@{collision\-Location}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{collision\-Location}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collision\-Type} Environment\-Class\-::collision\-Location (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{ball, }
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{brick}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a75226d04d26221aa24cef7a00bce6ce2}
+
+
+Determines which side of a brick has been hit. 
+
+This function determines which side of a brick the ball is colliding with and returns the Collision\-Type enum indicating whether the left, right, top, or bottom side has been collided into. If no collision is detected, no\-Collision will be returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ball} & the ball \\
+\hline
+{\em brick} & the brick being hit\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+enum Collision\-Type location of collision
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classEnvironmentClass_a0c43d38e65c879efdad9f09a58835c77}{\index{Environment\-Class@{Environment\-Class}!display@{display}}
+\index{display@{display}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::display (
+\begin{DoxyParamCaption}
+\item[{double}]{elapsed\-Time}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a0c43d38e65c879efdad9f09a58835c77}
+
+
+Draw and displays objects and environment. 
+
+This function is constantly called from simulation. It displays and draws all the objects and calls the update function and effectively sets up the environment. It uses the elapsed time input to determine the amount of movement for each object. This function also draws the life indicator balls in the upper left corner of the simulation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed\-Time} & amount of time passed since last update\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classEnvironmentClass_a6ce1e78294fb94ac1fc27cf3ef1f0419}{\index{Environment\-Class@{Environment\-Class}!object\-Collision@{object\-Collision}}
+\index{object\-Collision@{object\-Collision}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{object\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::object\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{current\-Object, }
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{hit\-Object, }
+\item[{double}]{elapsed\-Time}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a6ce1e78294fb94ac1fc27cf3ef1f0419}
+
+
+Performs wall collision movement. 
+
+This function determines whether the object being hit is a brick or a paddle. If it is a brick, it will remove the brick after performing the appropriate collision movement. If it is a paddle, then it will perform the paddle collision movement but the paddle not be removed from the simulation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-Object} & ball object \\
+\hline
+{\em hit\-Object} & object being hit \\
+\hline
+{\em elapsed\-Time} & elapsed time\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classEnvironmentClass_a564160db6ba48653b24b3a42ce9d2d58}{\index{Environment\-Class@{Environment\-Class}!remove\-Object@{remove\-Object}}
+\index{remove\-Object@{remove\-Object}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{remove\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::remove\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a564160db6ba48653b24b3a42ce9d2d58}
+
+
+Removes the object from the simulation. 
+
+This function removes the input object from the simulation by erasing it from the Physical\-Object\-Vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object that needs removing\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicholas Inman 
+\end{DoxyAuthor}
+\hypertarget{classEnvironmentClass_a3acbe9866577efe3b66527babab09720}{\index{Environment\-Class@{Environment\-Class}!touch\-Sensor\-Reading@{touch\-Sensor\-Reading}}
+\index{touch\-Sensor\-Reading@{touch\-Sensor\-Reading}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{touch\-Sensor\-Reading}]{\setlength{\rightskip}{0pt plus 5cm}int Environment\-Class\-::touch\-Sensor\-Reading (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{ball}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a3acbe9866577efe3b66527babab09720}
+
+
+Collision detection. 
+
+This function takes in the ball and checks if it's colliding with another object or a wall. It returns -\/1 if the ball is not colliding with anything, -\/2 if it is colliding with a wall, or the index of the object it is colliding with.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ball} & the ball\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if the ball is not colliding with anything -\/2 if the ball is colliding with a wall index of the object the ball is colliding with
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classEnvironmentClass_a0fa52a8dd735412f9d46f4e2499e8108}{\index{Environment\-Class@{Environment\-Class}!translate@{translate}}
+\index{translate@{translate}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{translate}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::translate (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object, }
+\item[{double}]{elapsed\-Time}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a0fa52a8dd735412f9d46f4e2499e8108}
+
+
+Moves the input object. 
+
+This function resets the location of the input object based on its speed, original location, orientation, and elapsed time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object being translated \\
+\hline
+{\em elapsed\-Time} & the amount of time passed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicholas Inman 
+
+Rachel Soble 
+
+Nicole Zhang 
+\end{DoxyAuthor}
+\hypertarget{classEnvironmentClass_a7d992b6ef4e8b95542af1ae775be988a}{\index{Environment\-Class@{Environment\-Class}!update@{update}}
+\index{update@{update}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::update (
+\begin{DoxyParamCaption}
+\item[{double}]{elapsed\-Time}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a7d992b6ef4e8b95542af1ae775be988a}
+
+
+Updates the environment and all its objects. 
+
+This function takes in one argument, elapsed\-Time, and iterates through the physical\-Objects array, calling move each time. Move then returns a double\mbox{[}2\mbox{]} array containing the direction and magnitude of movement. Based on which coordinate the object currently is in, it sets the object's new position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed\-Time} & the amount of time passed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Nicholas Inman 
+
+Rachel Soble 
+
+Nicole Zhang 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{EnvironmentClass_8h}{Environment\-Class.\-h}\item 
+\hyperlink{EnvironmentClass_8cpp}{Environment\-Class.\-cpp}\end{DoxyCompactItemize}

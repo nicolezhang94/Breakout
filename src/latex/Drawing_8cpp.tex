@@ -1,0 +1,150 @@
+\hypertarget{Drawing_8cpp}{\section{Drawing.\-cpp File Reference}
+\label{Drawing_8cpp}\index{Drawing.\-cpp@{Drawing.\-cpp}}
+}
+
+
+contains Drawing class definitions  
+
+
+{\ttfamily \#include \char`\"{}Drawing.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{Drawing_8cpp_a598a3330b3c21701223ee0ca14316eca}{\#define {\bfseries P\-I}~3.\-14f}\label{Drawing_8cpp_a598a3330b3c21701223ee0ca14316eca}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Drawing_8cpp_a55c83ce13cd3b1901fafdb0341ead20d}{init\-Object} (\hyperlink{classObstacle}{Obstacle} obstacle)
+\begin{DoxyCompactList}\small\item\em Populates an array of obstacles/targets to be drawn in the simulation. \end{DoxyCompactList}\item 
+double $\ast$ \hyperlink{Drawing_8cpp_a6e859c9269e115c50911b0e6b5d02751}{calc\-Line\-Coord} (double robot\-\_\-\-X, double robot\-\_\-\-Y, double size, double orient)
+\begin{DoxyCompactList}\small\item\em Calculates the outside coordinate of the robot's orientation line. \end{DoxyCompactList}\item 
+void \hyperlink{Drawing_8cpp_a733fd28fa40e808594a8846df18cfad8}{draw\-Robot} (\hyperlink{classRobotClass}{Robot\-Class} robot)
+\begin{DoxyCompactList}\small\item\em Draws the robot with its orientation line. \end{DoxyCompactList}\item 
+void \hyperlink{Drawing_8cpp_a2055a3d753a0f953b12eb126431d39ad}{draw\-Circle} (\hyperlink{classObstacle}{Obstacle} circle\-Obstacle)
+\begin{DoxyCompactList}\small\item\em Draws an object as a circle. \end{DoxyCompactList}\item 
+void \hyperlink{Drawing_8cpp_aeb5e790a9494269046fc417c0a6775ad}{draw\-Circle} (\hyperlink{classObstacle}{Obstacle} circle\-Obstacle, char color)
+\begin{DoxyCompactList}\small\item\em Draws an object as a circle of a specified color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{Drawing_8cpp_a30a40aefe895edf282e1c041dca9a551}{int {\bfseries num\-Of\-Objects} = 0}\label{Drawing_8cpp_a30a40aefe895edf282e1c041dca9a551}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains Drawing class definitions \begin{DoxyAuthor}{Author}
+Nicole Zhang 
+
+Rachel Soble 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{Drawing_8cpp_a6e859c9269e115c50911b0e6b5d02751}{\index{Drawing.\-cpp@{Drawing.\-cpp}!calc\-Line\-Coord@{calc\-Line\-Coord}}
+\index{calc\-Line\-Coord@{calc\-Line\-Coord}!Drawing.cpp@{Drawing.\-cpp}}
+\subsubsection[{calc\-Line\-Coord}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ calc\-Line\-Coord (
+\begin{DoxyParamCaption}
+\item[{double}]{robot\-\_\-\-X, }
+\item[{double}]{robot\-\_\-\-Y, }
+\item[{double}]{size, }
+\item[{double}]{orient}
+\end{DoxyParamCaption}
+)}}\label{Drawing_8cpp_a6e859c9269e115c50911b0e6b5d02751}
+
+
+Calculates the outside coordinate of the robot's orientation line. 
+
+calc\-Line\-Coord takes in the robot's location (robot\-\_\-\-X, robot\-\_\-\-Y), size, and orientation as arguments. The robot's orientation line is anchored to its center at the coordinate (robot\-\_\-\-X, robot\-\_\-\-Y). This method calculates the coordinate of the other end of the line, emerging from the robot (by 20 pixels), based on the robot's orientation. It returns the pointer to an array containing these coordinates so that they can be passed to draw\-Robot.
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot\-\_\-\-X} & double x-\/coordinate of the robot (in pixels) \\
+\hline
+{\em robot\-\_\-\-Y} & double y-\/coordinate of the robot (in pixels) \\
+\hline
+{\em size} & double size of the robot (in pixels) \\
+\hline
+{\em orient} & double orientation of the robot (in degrees; 0 as the positive x-\/axis) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+calc\-Line\-Coord pointer to double array containing end coordinates of orientation line 
+\end{DoxyReturn}
+\hypertarget{Drawing_8cpp_a2055a3d753a0f953b12eb126431d39ad}{\index{Drawing.\-cpp@{Drawing.\-cpp}!draw\-Circle@{draw\-Circle}}
+\index{draw\-Circle@{draw\-Circle}!Drawing.cpp@{Drawing.\-cpp}}
+\subsubsection[{draw\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Obstacle}}]{circle\-Obstacle}
+\end{DoxyParamCaption}
+)}}\label{Drawing_8cpp_a2055a3d753a0f953b12eb126431d39ad}
+
+
+Draws an object as a circle. 
+
+draw\-Circle takes in an \hyperlink{classObstacle}{Obstacle} type object (i.\-e. an obstacle or a target) as an argument. It draws the object as a circle of radius \char`\"{}size\char`\"{} using 50 triangle fans. The default color is blue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em circle\-Obstacle} & circle-\/shaped obstacle/target \\
+\hline
+\end{DoxyParams}
+\hypertarget{Drawing_8cpp_aeb5e790a9494269046fc417c0a6775ad}{\index{Drawing.\-cpp@{Drawing.\-cpp}!draw\-Circle@{draw\-Circle}}
+\index{draw\-Circle@{draw\-Circle}!Drawing.cpp@{Drawing.\-cpp}}
+\subsubsection[{draw\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Obstacle}}]{circle\-Obstacle, }
+\item[{char}]{color}
+\end{DoxyParamCaption}
+)}}\label{Drawing_8cpp_aeb5e790a9494269046fc417c0a6775ad}
+
+
+Draws an object as a circle of a specified color. 
+
+draw\-Circle takes in an \hyperlink{classObstacle}{Obstacle} type object (i.\-e. an obstacle or a target) and a character as arguments. The object is drawn just as the simpler \hyperlink{Drawing_8h_a2055a3d753a0f953b12eb126431d39ad}{draw\-Circle(\-Obstacle circle\-Obstacle)} method would, except the passed character ('R', 'G', 'B') specifies the color of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em circle\-Obstacle} & circle-\/shaped obstacle/target \\
+\hline
+{\em color} & character specifying object color \\
+\hline
+\end{DoxyParams}
+\hypertarget{Drawing_8cpp_a733fd28fa40e808594a8846df18cfad8}{\index{Drawing.\-cpp@{Drawing.\-cpp}!draw\-Robot@{draw\-Robot}}
+\index{draw\-Robot@{draw\-Robot}!Drawing.cpp@{Drawing.\-cpp}}
+\subsubsection[{draw\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Robot (
+\begin{DoxyParamCaption}
+\item[{{\bf Robot\-Class}}]{robot}
+\end{DoxyParamCaption}
+)}}\label{Drawing_8cpp_a733fd28fa40e808594a8846df18cfad8}
+
+
+Draws the robot with its orientation line. 
+
+draw\-Robot takes in a \hyperlink{classRobotClass}{Robot\-Class} robot object as an argument. It draws the main body of the robot as a circle of radius \char`\"{}size\char`\"{} using 50 triangle fans. Then it draws a line anchored at the center of the robot and emerging from its body in the direction of its orientation. The default robot body color is green, and the default orientation line color is red.
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & the simulation's robot \\
+\hline
+\end{DoxyParams}
+\hypertarget{Drawing_8cpp_a55c83ce13cd3b1901fafdb0341ead20d}{\index{Drawing.\-cpp@{Drawing.\-cpp}!init\-Object@{init\-Object}}
+\index{init\-Object@{init\-Object}!Drawing.cpp@{Drawing.\-cpp}}
+\subsubsection[{init\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Obstacle}}]{obstacle}
+\end{DoxyParamCaption}
+)}}\label{Drawing_8cpp_a55c83ce13cd3b1901fafdb0341ead20d}
+
+
+Populates an array of obstacles/targets to be drawn in the simulation. 
+
+This functions adds an input \hyperlink{classObstacle}{Obstacle} object to the obstacle\-Object array
+
+
+\begin{DoxyParams}{Parameters}
+{\em obstacle\-Object} & \\
+\hline
+\end{DoxyParams}

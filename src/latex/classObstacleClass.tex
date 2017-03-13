@@ -1,0 +1,141 @@
+\hypertarget{classObstacleClass}{\section{Obstacle\-Class Class Reference}
+\label{classObstacleClass}\index{Obstacle\-Class@{Obstacle\-Class}}
+}
+
+
+Inheritance diagram for Obstacle\-Class\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classObstacleClass__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Obstacle\-Class\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classObstacleClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObstacleClass_a7fa2d44335187a92e7a175e70963afd1}{Obstacle\-Class} ()
+\begin{DoxyCompactList}\small\item\em default Obstacle constructor \end{DoxyCompactList}\item 
+\hyperlink{classObstacleClass_aff7cabe763e79d642912d7f95a681a52}{Obstacle\-Class} (\hyperlink{PhysicalObjectClass_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} shape\-In, int size\-In)
+\begin{DoxyCompactList}\small\item\em obstacle constructor with two parameters \end{DoxyCompactList}\item 
+\hyperlink{classObstacleClass_a019600b458c09a3190d637638fd24e8d}{Obstacle\-Class} (\hyperlink{PhysicalObjectClass_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\-Type} shape\-In, int size\-In, double x, double y)
+\begin{DoxyCompactList}\small\item\em obstacle constructor with 4 paramters \end{DoxyCompactList}\item 
+void \hyperlink{classObstacleClass_a7441fc7bc4c504dad86558b4f4314443}{set\-Init\-Location} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Sets the initial obstacle location. \end{DoxyCompactList}\item 
+void \hyperlink{classObstacleClass_ab405faf368836ef45a42fb4f7084631e}{set\-Location} (double x, double y)
+\begin{DoxyCompactList}\small\item\em sets object Position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classObstacleClass_a7fa2d44335187a92e7a175e70963afd1}{\index{Obstacle\-Class@{Obstacle\-Class}!Obstacle\-Class@{Obstacle\-Class}}
+\index{Obstacle\-Class@{Obstacle\-Class}!ObstacleClass@{Obstacle\-Class}}
+\subsubsection[{Obstacle\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Obstacle\-Class\-::\-Obstacle\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObstacleClass_a7fa2d44335187a92e7a175e70963afd1}
+
+
+default Obstacle constructor 
+
+This constructor creates an circle with size 5 and a random location \hypertarget{classObstacleClass_aff7cabe763e79d642912d7f95a681a52}{\index{Obstacle\-Class@{Obstacle\-Class}!Obstacle\-Class@{Obstacle\-Class}}
+\index{Obstacle\-Class@{Obstacle\-Class}!ObstacleClass@{Obstacle\-Class}}
+\subsubsection[{Obstacle\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Obstacle\-Class\-::\-Obstacle\-Class (
+\begin{DoxyParamCaption}
+\item[{{\bf Shape\-Type}}]{shape\-In, }
+\item[{int}]{size\-In}
+\end{DoxyParamCaption}
+)}}\label{classObstacleClass_aff7cabe763e79d642912d7f95a681a52}
+
+
+obstacle constructor with two parameters 
+
+This constructor creates an obstacle of type shape\-In with size size\-In \hypertarget{classObstacleClass_a019600b458c09a3190d637638fd24e8d}{\index{Obstacle\-Class@{Obstacle\-Class}!Obstacle\-Class@{Obstacle\-Class}}
+\index{Obstacle\-Class@{Obstacle\-Class}!ObstacleClass@{Obstacle\-Class}}
+\subsubsection[{Obstacle\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Obstacle\-Class\-::\-Obstacle\-Class (
+\begin{DoxyParamCaption}
+\item[{{\bf Shape\-Type}}]{shape\-In, }
+\item[{int}]{size\-In, }
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{classObstacleClass_a019600b458c09a3190d637638fd24e8d}
+
+
+obstacle constructor with 4 paramters 
+
+This constructor creates an obstacle of type shape\-In with size size\-In, x-\/position x, and y position y 
+\begin{DoxyParams}{Parameters}
+{\em shape\-In} & Enum shape \\
+\hline
+{\em size\-In} & integer size of shape \\
+\hline
+{\em x} & integer x coordinate (in pixels) \\
+\hline
+{\em y} & integer y coordinate (in pixels) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classObstacleClass_a7441fc7bc4c504dad86558b4f4314443}{\index{Obstacle\-Class@{Obstacle\-Class}!set\-Init\-Location@{set\-Init\-Location}}
+\index{set\-Init\-Location@{set\-Init\-Location}!ObstacleClass@{Obstacle\-Class}}
+\subsubsection[{set\-Init\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void Obstacle\-Class\-::set\-Init\-Location (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{classObstacleClass_a7441fc7bc4c504dad86558b4f4314443}
+
+
+Sets the initial obstacle location. 
+
+Sets the initial obstacle location, ensuring that the obstacle will not overlap with any other objects
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x double location of the obstacle \\
+\hline
+{\em y} & y double location of the obstacle \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObstacleClass_ab405faf368836ef45a42fb4f7084631e}{\index{Obstacle\-Class@{Obstacle\-Class}!set\-Location@{set\-Location}}
+\index{set\-Location@{set\-Location}!ObstacleClass@{Obstacle\-Class}}
+\subsubsection[{set\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void Obstacle\-Class\-::set\-Location (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classObstacleClass_ab405faf368836ef45a42fb4f7084631e}
+
+
+sets object Position 
+
+This function sets the obstacle's x-\/ and y-\/positions to the integer input from the user
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classPhysicalObjectClass_a3f9833aa04aa438de63b82fc761910ba}{Physical\-Object\-Class}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObstacleClass_8h}{Obstacle\-Class.\-h}\item 
+\hyperlink{ObstacleClass_8cpp}{Obstacle\-Class.\-cpp}\end{DoxyCompactItemize}

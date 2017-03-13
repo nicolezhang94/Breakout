@@ -1,0 +1,13 @@
+<map id="ObstacleClass.h" name="ObstacleClass.h">
+<area shape="rect" id="node2" href="$EnvironmentClass_8h.html" title="Manages and controls object movement and behavior. " alt="" coords="350,80,490,107"/>
+<area shape="rect" id="node5" href="$RenderingWindowClass_8h.html" title="Interface between the graphics and EnvironmentClass. " alt="" coords="267,229,440,256"/>
+<area shape="rect" id="node11" href="$ObstacleClass_8cpp.html" title="contains ObstacleClass class definitions " alt="" coords="566,80,699,107"/>
+<area shape="rect" id="node12" href="$ObstacleClassTests_8h_source.html" title="ObstacleClassTests.h" alt="" coords="723,80,875,107"/>
+<area shape="rect" id="node3" href="$EnvironmentClass_8cpp.html" title="Manages and controls object movement and behavior. " alt="" coords="394,304,547,331"/>
+<area shape="rect" id="node4" href="$RobotClass_8h.html" title="The representation of the robot within the simulation. " alt="" coords="240,155,342,181"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="driver file for robot class " alt="" coords="171,379,244,405"/>
+<area shape="rect" id="node8" href="$Simulation_8cpp.html" title="contains Simulation class definitions " alt="" coords="380,379,487,405"/>
+<area shape="rect" id="node6" href="$Simulation_8h.html" title="Main application class for the robot simulation. " alt="" coords="274,304,368,331"/>
+<area shape="rect" id="node9" href="$RenderingWindowClass_8cpp.html" title="Interface between the graphics and EnvironmentClass. " alt="" coords="63,304,250,331"/>
+<area shape="rect" id="node10" href="$RobotClass_8cpp.html" title="contains Drawing class definitions " alt="" coords="25,229,140,256"/>
+</map>

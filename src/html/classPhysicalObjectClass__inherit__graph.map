@@ -1,0 +1,4 @@
+<map id="PhysicalObjectClass" name="PhysicalObjectClass">
+<area shape="rect" id="node2" href="$classRobotClass.html" title="{RobotClass\n|# reactionType\l# connectionType\l# leftSpeed\l# rightSpeed\l|+ RobotClass()\l+ RobotClass()\l+ RobotClass()\l+ ~RobotClass()\l+ randSensorSettings()\l+ setStrength()\l+ setScaledColor()\l+ setInitLocation()\l+ setLocation()\l+ setLeftSpeed()\l+ setRightSpeed()\l+ getReactionType()\l+ getConnectionType()\l+ getLeftSpeed()\l+ getRightSpeed()\l+ getLeftSensorLocation()\l+ getRightSensorLocation()\l}" alt="" coords="5,558,187,914"/>
+<area shape="rect" id="node3" href="$classTargetClass.html" title="{TargetClass\n||+ TargetClass()\l+ TargetClass()\l+ TargetClass()\l+ randColor()\l+ setScaledColor()\l+ setLocation()\l+ setStrength()\l}" alt="" coords="211,653,340,819"/>
+</map>
